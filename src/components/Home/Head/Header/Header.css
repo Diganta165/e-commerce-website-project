@@ -1,0 +1,21 @@
+.navbar-parent{
+    background-color: var(--primaryColor);
+}
+/* .logo-image{
+    width: 100%;
+} */
+
+.navItem-parent{
+    display: flex;
+    align-items: center;
+}
+
+.navItem{
+    color: burlywood;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.navItem:hover{
+    color: black;
+}
