@@ -85,3 +85,69 @@
     width: 15px;
     top: calc(50% + 5px);
 }
+
+.header_logo{
+    display: flex;
+    height: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.header_logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.header_icon_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* display: none; */
+    cursor: pointer;
+}
+
+.header_icon_link{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+@media screen and (min-width:1025px){
+    .header_section{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom:0;
+        height: 100vh;
+        padding: 35px 17px;
+    }
+    .header_area{
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .header_left{
+        width: unset;
+        height: 50vh;
+        flex-direction: column;
+    }
+
+    .hamburger_icon_wrapper{
+        order: 1;
+    }
+
+    .hamburger_icon{
+        position: relative;
+    }
+
+    .header_icon_list{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
